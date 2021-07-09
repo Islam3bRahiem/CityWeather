@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+class SearchUseCase {
+
+    let searchRepository: SearchRepository
+    let disposeBag = DisposeBag()
+
+    init(searchRepository: SearchRepository) {
+        self.searchRepository = searchRepository
+    }
+
+    func executeCitiesFetch(_ cityName: String) -> Observable<[ListResponse]>{
+        let observable = searchRepository.fetchSearchData(cityName)
+        observable.subscribe { (item) in
+            // TODO :- nothing
+        }.disposed(by: disposeBag)
+        return observable
+    }
+
+}

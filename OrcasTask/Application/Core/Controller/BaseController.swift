@@ -20,6 +20,7 @@ class BaseController: UIViewController {
         return DisposeBag()
     }()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,7 +29,7 @@ class BaseController: UIViewController {
 
 extension BaseController: BaseControllerFunctions {
     func makeAlert(with message: String) {
-        self.view.makeToast(message)
+        self.view.makeToast(message, position: .top)
     }
 
 }

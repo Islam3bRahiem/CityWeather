@@ -9,17 +9,18 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class CashManager {
+protocol CashManagerOperation {
+    func fetchAllCity(completion: @escaping ([ResponseModel]) -> Void)
+    func save(_ data: ResponseModel)
+    func fetchCity(cityName: String, completion: @escaping (Bool, [ListResponse]?) -> Void) 
+}
+
+class CashManager: CashManagerOperation {
 
     static var shared = CashManager()
     private let UD = UserDefaults.standard
 
-//    private var items: BehaviorRelay<[ListResponse]> = .init(value: [])
-//    var itemsObservable: Observable<[ListResponse]>
-
-    init() {
-//        itemsObservable = items.asObservable()
-    }
+    init() { }
 
     func fetchAllCity(completion: @escaping ([ResponseModel]) -> Void) {
         let data = UD.fetchAllCash()
@@ -29,9 +30,12 @@ class CashManager {
         UD.saveResponseToCash(response: data)
     }
 
-    func fetchCity(cityName: String, completion: @escaping ([ListResponse]) -> Void) {
-        let city = UD.fetchCityFromCash(cityName)
-        completion(city?.list ?? [])
+    func fetchCity(cityName: String, completion: @escaping (Bool, [ListResponse]?) -> Void) {
+        if let city = UD.fetchCityFromCash(cityName) {
+            completion(true, city.list)
+            return
+        }
+        completion(false, nil)
     }
 
 }

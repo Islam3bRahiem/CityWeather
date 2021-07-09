@@ -10,7 +10,6 @@ import Foundation
 // MARK: - ResponseObject
 struct ResponseObject<T: Decodable>: Decodable {
     let cod: String?
-    let message: String?
     let cnt: Int?
     let list: T?
 }

@@ -3,18 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A686213126961B080045176C /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686213026961B080045176C /* BaseController.swift */; };
+		A686213A26961CD40045176C /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686213926961CD40045176C /* UITableViewExtensions.swift */; };
+		A686214326961E5C0045176C /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686214126961E5C0045176C /* WeatherCell.swift */; };
+		A686214426961E5C0045176C /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A686214226961E5C0045176C /* WeatherCell.xib */; };
+		A6862163269620BC0045176C /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6862162269620BC0045176C /* APIRouter.swift */; };
+		A686216C269620C20045176C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6862167269620C20045176C /* NetworkClient.swift */; };
+		A686216D269620C20045176C /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6862168269620C20045176C /* SearchRouter.swift */; };
+		A686216F269620C20045176C /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686216A269620C20045176C /* NetworkConstants.swift */; };
+		A6862176269620F80045176C /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6862175269620F80045176C /* ResponseObject.swift */; };
+		A68621952696233A0045176C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621942696233A0045176C /* BaseViewModel.swift */; };
+		A68621B4269625660045176C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621B3269625660045176C /* SearchViewModel.swift */; };
+		A68621BA269626090045176C /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621B9269626090045176C /* SearchRepository.swift */; };
+		A68621BF269627D00045176C /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621BE269627D00045176C /* SearchUseCase.swift */; };
+		A68621C5269629D60045176C /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621C4269629D60045176C /* CityViewModel.swift */; };
 		A6D164AC2696077F00BE83AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AB2696077F00BE83AB /* AppDelegate.swift */; };
 		A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AD2696077F00BE83AB /* SceneDelegate.swift */; };
-		A6D164B02696077F00BE83AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AF2696077F00BE83AB /* ViewController.swift */; };
 		A6D164B32696077F00BE83AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B12696077F00BE83AB /* Main.storyboard */; };
 		A6D164B52696078200BE83AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B42696078200BE83AB /* Assets.xcassets */; };
 		A6D164B82696078200BE83AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B62696078200BE83AB /* LaunchScreen.storyboard */; };
 		A6D164C32696078200BE83AB /* OrcasTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164C22696078200BE83AB /* OrcasTaskTests.swift */; };
 		A6D164CE2696078200BE83AB /* OrcasTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164CD2696078200BE83AB /* OrcasTaskUITests.swift */; };
+		A6D1652A2696133300BE83AB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D165282696133300BE83AB /* SearchVC.swift */; };
+		A6D4392326988CE200C9322F /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D4392226988CE200C9322F /* ResponseCode.swift */; };
+		A6D439962698BC1D00C9322F /* NetworkFailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D439932698BC1D00C9322F /* NetworkFailScreen.swift */; };
+		A6D439972698BC1D00C9322F /* NetworkFailScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D439942698BC1D00C9322F /* NetworkFailScreen.xib */; };
+		A6DD878126987C6B00C8CD43 /* StoredProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD878026987C6B00C8CD43 /* StoredProperty.swift */; };
+		A6DD878C26987D1300C8CD43 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD878B26987D1300C8CD43 /* UserDefault.swift */; };
+		A6DD879126987FDD00C8CD43 /* CashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD879026987FDD00C8CD43 /* CashManager.swift */; };
+		B22116D06482FABC9C6F96F1 /* Pods_OrcasTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCE24040EEE719D9D5A23C9 /* Pods_OrcasTaskTests.framework */; };
+		D85FA9FA9F2AD70DF778065D /* Pods_OrcasTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A784DBE3AAEB9BC0D975001A /* Pods_OrcasTask.framework */; };
+		EE3DA002D0BD45D9C272C5A3 /* Pods_OrcasTask_OrcasTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1557883316CA877E4B1C0AEF /* Pods_OrcasTask_OrcasTaskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +58,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1557883316CA877E4B1C0AEF /* Pods_OrcasTask_OrcasTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrcasTask_OrcasTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE590AC2EAD95E95DC6D5E5 /* Pods-OrcasTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTaskTests.release.xcconfig"; path = "Target Support Files/Pods-OrcasTaskTests/Pods-OrcasTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		236523203A83F7FE2D0E02E6 /* Pods-OrcasTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTask.release.xcconfig"; path = "Target Support Files/Pods-OrcasTask/Pods-OrcasTask.release.xcconfig"; sourceTree = "<group>"; };
+		4FCE24040EEE719D9D5A23C9 /* Pods_OrcasTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrcasTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69882CA38C1C8B8BCB62F6BE /* Pods-OrcasTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-OrcasTaskTests/Pods-OrcasTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A686213026961B080045176C /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		A686213926961CD40045176C /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		A686214126961E5C0045176C /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		A686214226961E5C0045176C /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		A6862162269620BC0045176C /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		A6862167269620C20045176C /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		A6862168269620C20045176C /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		A686216A269620C20045176C /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		A6862175269620F80045176C /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		A68621942696233A0045176C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A68621B3269625660045176C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A68621B9269626090045176C /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		A68621BE269627D00045176C /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		A68621C4269629D60045176C /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		A6D164A82696077F00BE83AB /* OrcasTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrcasTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D164AB2696077F00BE83AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D164AD2696077F00BE83AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6D164AF2696077F00BE83AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6D164B22696077F00BE83AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D164B42696078200BE83AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D164B72696078200BE83AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +90,17 @@
 		A6D164C92696078200BE83AB /* OrcasTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrcasTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D164CD2696078200BE83AB /* OrcasTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrcasTaskUITests.swift; sourceTree = "<group>"; };
 		A6D164CF2696078200BE83AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D165282696133300BE83AB /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A6D4392226988CE200C9322F /* ResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCode.swift; sourceTree = "<group>"; };
+		A6D439932698BC1D00C9322F /* NetworkFailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFailScreen.swift; sourceTree = "<group>"; };
+		A6D439942698BC1D00C9322F /* NetworkFailScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkFailScreen.xib; sourceTree = "<group>"; };
+		A6DD878026987C6B00C8CD43 /* StoredProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredProperty.swift; sourceTree = "<group>"; };
+		A6DD878B26987D1300C8CD43 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		A6DD879026987FDD00C8CD43 /* CashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashManager.swift; sourceTree = "<group>"; };
+		A784DBE3AAEB9BC0D975001A /* Pods_OrcasTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrcasTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED66CDCD7C5678DD3914EA2 /* Pods-OrcasTask-OrcasTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTask-OrcasTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-OrcasTask-OrcasTaskUITests/Pods-OrcasTask-OrcasTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1FF4D63F5E561C9E2030DD /* Pods-OrcasTask-OrcasTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTask-OrcasTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-OrcasTask-OrcasTaskUITests/Pods-OrcasTask-OrcasTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E254E836908E69AF457D8AF5 /* Pods-OrcasTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrcasTask.debug.xcconfig"; path = "Target Support Files/Pods-OrcasTask/Pods-OrcasTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85FA9FA9F2AD70DF778065D /* Pods_OrcasTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22116D06482FABC9C6F96F1 /* Pods_OrcasTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +124,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3DA002D0BD45D9C272C5A3 /* Pods_OrcasTask_OrcasTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69E97BB60EE5B36D3E4CC174 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E254E836908E69AF457D8AF5 /* Pods-OrcasTask.debug.xcconfig */,
+				236523203A83F7FE2D0E02E6 /* Pods-OrcasTask.release.xcconfig */,
+				AED66CDCD7C5678DD3914EA2 /* Pods-OrcasTask-OrcasTaskUITests.debug.xcconfig */,
+				CB1FF4D63F5E561C9E2030DD /* Pods-OrcasTask-OrcasTaskUITests.release.xcconfig */,
+				69882CA38C1C8B8BCB62F6BE /* Pods-OrcasTaskTests.debug.xcconfig */,
+				1AE590AC2EAD95E95DC6D5E5 /* Pods-OrcasTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8033552827A4ABF8564E494D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A784DBE3AAEB9BC0D975001A /* Pods_OrcasTask.framework */,
+				1557883316CA877E4B1C0AEF /* Pods_OrcasTask_OrcasTaskUITests.framework */,
+				4FCE24040EEE719D9D5A23C9 /* Pods_OrcasTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A621148126964C49000B8E8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A686213026961B080045176C /* BaseController.swift */,
+				A68621942696233A0045176C /* BaseViewModel.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A621148226964C74000B8E8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6862175269620F80045176C /* ResponseObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A686212B269617820045176C /* Weather Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A686214226961E5C0045176C /* WeatherCell.xib */,
+				A686214126961E5C0045176C /* WeatherCell.swift */,
+			);
+			path = "Weather Cell";
+			sourceTree = "<group>";
+		};
+		A686212F26961AF90045176C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A621148126964C49000B8E8A /* Controller */,
+				A621148226964C74000B8E8A /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A686213826961CBF0045176C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A686213926961CD40045176C /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A68621612696205D0045176C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A6862162269620BC0045176C /* APIRouter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A68621B8269625FE0045176C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A68621B9269626090045176C /* SearchRepository.swift */,
+				A68621BE269627D00045176C /* SearchUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		A6D1649F2696077F00BE83AB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +221,8 @@
 				A6D164C12696078200BE83AB /* OrcasTaskTests */,
 				A6D164CC2696078200BE83AB /* OrcasTaskUITests */,
 				A6D164A92696077F00BE83AB /* Products */,
+				69E97BB60EE5B36D3E4CC174 /* Pods */,
+				8033552827A4ABF8564E494D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +239,13 @@
 		A6D164AA2696077F00BE83AB /* OrcasTask */ = {
 			isa = PBXGroup;
 			children = (
-				A6D164AB2696077F00BE83AB /* AppDelegate.swift */,
-				A6D164AD2696077F00BE83AB /* SceneDelegate.swift */,
-				A6D164AF2696077F00BE83AB /* ViewController.swift */,
+				A6DD877E26987C5000C8CD43 /* Utility */,
+				A686213826961CBF0045176C /* Extensions */,
+				A6D1651C269611A100BE83AB /* Application */,
+				A6D164E12696085A00BE83AB /* Network */,
+				A6D165222696120000BE83AB /* Modules */,
 				A6D164B12696077F00BE83AB /* Main.storyboard */,
-				A6D164B42696078200BE83AB /* Assets.xcassets */,
 				A6D164B62696078200BE83AB /* LaunchScreen.storyboard */,
-				A6D164B92696078200BE83AB /* Info.plist */,
 			);
 			path = OrcasTask;
 			sourceTree = "<group>";
@@ -128,6 +268,94 @@
 			path = OrcasTaskUITests;
 			sourceTree = "<group>";
 		};
+		A6D164E12696085A00BE83AB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A68621612696205D0045176C /* Protocols */,
+				A686216A269620C20045176C /* NetworkConstants.swift */,
+				A6862167269620C20045176C /* NetworkClient.swift */,
+				A6D4392226988CE200C9322F /* ResponseCode.swift */,
+				A6862168269620C20045176C /* SearchRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A6D1651C269611A100BE83AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A6D439902698BC0400C9322F /* Themes */,
+				A686212F26961AF90045176C /* Core */,
+				A6D1651E269611CD00BE83AB /* SupportFiles */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A6D1651E269611CD00BE83AB /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A6D164AD2696077F00BE83AB /* SceneDelegate.swift */,
+				A6D164AB2696077F00BE83AB /* AppDelegate.swift */,
+				A6D164B42696078200BE83AB /* Assets.xcassets */,
+				A6D164B92696078200BE83AB /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A6D165222696120000BE83AB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A6D165232696120B00BE83AB /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A6D165232696120B00BE83AB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A68621B8269625FE0045176C /* Domain */,
+				A686212B269617820045176C /* Weather Cell */,
+				A6D165282696133300BE83AB /* SearchVC.swift */,
+				A68621B3269625660045176C /* SearchViewModel.swift */,
+				A68621C4269629D60045176C /* CityViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A6D439902698BC0400C9322F /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				A6D439912698BC0A00C9322F /* NetworkFail */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		A6D439912698BC0A00C9322F /* NetworkFail */ = {
+			isa = PBXGroup;
+			children = (
+				A6D439932698BC1D00C9322F /* NetworkFailScreen.swift */,
+				A6D439942698BC1D00C9322F /* NetworkFailScreen.xib */,
+			);
+			path = NetworkFail;
+			sourceTree = "<group>";
+		};
+		A6DD877E26987C5000C8CD43 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD879026987FDD00C8CD43 /* CashManager.swift */,
+				A6DD877F26987C6500C8CD43 /* UserDefault */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A6DD877F26987C6500C8CD43 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD878026987C6B00C8CD43 /* StoredProperty.swift */,
+				A6DD878B26987D1300C8CD43 /* UserDefault.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +363,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D164D22696078200BE83AB /* Build configuration list for PBXNativeTarget "OrcasTask" */;
 			buildPhases = (
+				BBA8AD5CC5B1679E55465ECB /* [CP] Check Pods Manifest.lock */,
 				A6D164A42696077F00BE83AB /* Sources */,
 				A6D164A52696077F00BE83AB /* Frameworks */,
 				A6D164A62696077F00BE83AB /* Resources */,
+				702889A25E171462B381CD2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +382,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D164D52696078200BE83AB /* Build configuration list for PBXNativeTarget "OrcasTaskTests" */;
 			buildPhases = (
+				735CD685951EAC9F1E7CB6CF /* [CP] Check Pods Manifest.lock */,
 				A6D164BA2696078200BE83AB /* Sources */,
 				A6D164BB2696078200BE83AB /* Frameworks */,
 				A6D164BC2696078200BE83AB /* Resources */,
@@ -170,9 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D164D82696078200BE83AB /* Build configuration list for PBXNativeTarget "OrcasTaskUITests" */;
 			buildPhases = (
+				5C90DCB6AC351BFB80EACEEC /* [CP] Check Pods Manifest.lock */,
 				A6D164C52696078200BE83AB /* Sources */,
 				A6D164C62696078200BE83AB /* Frameworks */,
 				A6D164C72696078200BE83AB /* Resources */,
+				F185444D23B79AC7EED797AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,8 +464,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A686214426961E5C0045176C /* WeatherCell.xib in Resources */,
 				A6D164B82696078200BE83AB /* LaunchScreen.storyboard in Resources */,
 				A6D164B52696078200BE83AB /* Assets.xcassets in Resources */,
+				A6D439972698BC1D00C9322F /* NetworkFailScreen.xib in Resources */,
 				A6D164B32696077F00BE83AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +488,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C90DCB6AC351BFB80EACEEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrcasTask-OrcasTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702889A25E171462B381CD2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrcasTask/Pods-OrcasTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrcasTask/Pods-OrcasTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrcasTask/Pods-OrcasTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		735CD685951EAC9F1E7CB6CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrcasTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA8AD5CC5B1679E55465ECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrcasTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F185444D23B79AC7EED797AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrcasTask-OrcasTaskUITests/Pods-OrcasTask-OrcasTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrcasTask-OrcasTaskUITests/Pods-OrcasTask-OrcasTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrcasTask-OrcasTaskUITests/Pods-OrcasTask-OrcasTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6D164A42696077F00BE83AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D164B02696077F00BE83AB /* ViewController.swift in Sources */,
+				A6DD879126987FDD00C8CD43 /* CashManager.swift in Sources */,
+				A6862163269620BC0045176C /* APIRouter.swift in Sources */,
+				A6D1652A2696133300BE83AB /* SearchVC.swift in Sources */,
+				A686216F269620C20045176C /* NetworkConstants.swift in Sources */,
+				A6D439962698BC1D00C9322F /* NetworkFailScreen.swift in Sources */,
+				A68621C5269629D60045176C /* CityViewModel.swift in Sources */,
+				A686213A26961CD40045176C /* UITableViewExtensions.swift in Sources */,
+				A686214326961E5C0045176C /* WeatherCell.swift in Sources */,
+				A6D4392326988CE200C9322F /* ResponseCode.swift in Sources */,
+				A68621BF269627D00045176C /* SearchUseCase.swift in Sources */,
+				A68621B4269625660045176C /* SearchViewModel.swift in Sources */,
+				A68621952696233A0045176C /* BaseViewModel.swift in Sources */,
 				A6D164AC2696077F00BE83AB /* AppDelegate.swift in Sources */,
+				A686213126961B080045176C /* BaseController.swift in Sources */,
+				A6862176269620F80045176C /* ResponseObject.swift in Sources */,
+				A6DD878126987C6B00C8CD43 /* StoredProperty.swift in Sources */,
 				A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */,
+				A6DD878C26987D1300C8CD43 /* UserDefault.swift in Sources */,
+				A68621BA269626090045176C /* SearchRepository.swift in Sources */,
+				A686216C269620C20045176C /* NetworkClient.swift in Sources */,
+				A686216D269620C20045176C /* SearchRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +789,13 @@
 		};
 		A6D164D32696078200BE83AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E254E836908E69AF457D8AF5 /* Pods-OrcasTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4A23ZSF86;
-				INFOPLIST_FILE = OrcasTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OrcasTask/Application/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +809,13 @@
 		};
 		A6D164D42696078200BE83AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236523203A83F7FE2D0E02E6 /* Pods-OrcasTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4A23ZSF86;
-				INFOPLIST_FILE = OrcasTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OrcasTask/Application/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +829,7 @@
 		};
 		A6D164D62696078200BE83AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69882CA38C1C8B8BCB62F6BE /* Pods-OrcasTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +852,7 @@
 		};
 		A6D164D72696078200BE83AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE590AC2EAD95E95DC6D5E5 /* Pods-OrcasTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +875,7 @@
 		};
 		A6D164D92696078200BE83AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED66CDCD7C5678DD3914EA2 /* Pods-OrcasTask-OrcasTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +896,7 @@
 		};
 		A6D164DA2696078200BE83AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1FF4D63F5E561C9E2030DD /* Pods-OrcasTask-OrcasTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

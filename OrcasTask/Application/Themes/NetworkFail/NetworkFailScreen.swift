@@ -13,10 +13,10 @@ import UIKit
 class NetworkFailScreen: UIView {
    
     @IBOutlet weak var container: UIView!
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var bodyLbl: UILabel!
+    @IBOutlet weak var tryAgainBtn: UIButton!
 
-    
+    var tryAgainBtnClicked: (() -> Void)? = nil
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         initNib()
@@ -39,13 +39,12 @@ class NetworkFailScreen: UIView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[childView]|", options: [], metrics: nil, views: ["childView": container ?? UIView()]))
     }
     func updateView() {
-        
+        tryAgainBtn.layer.cornerRadius = 12
     }
     @IBAction func tryAgain(_ sender: Any) {
-        let scene = UIApplication.topViewController() as? BaseController
-        scene?.hideNetworkFailScreen()
-        scene?.viewDidLoad()
-        scene?.viewWillAppear(false)
+        if let tryAgainBtnClicked = tryAgainBtnClicked {
+            tryAgainBtnClicked()
+        }
     }
 }
 

@@ -15,5 +15,6 @@ protocol ViewModel {
 
 class BaseViewModel: ViewModel {
     var isLoading: PublishSubject<Bool> = .init()
-    var displayError: PublishSubject<String> = .init()
+    var displayToastMessage: PublishSubject<String> = .init()
+    var noInternetConnection: PublishSubject<String> = .init()
 }
