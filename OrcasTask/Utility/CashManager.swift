@@ -12,7 +12,7 @@ import RxSwift
 protocol CashManagerOperation {
     func fetchAllCity(completion: @escaping ([ResponseModel]) -> Void)
     func save(_ data: ResponseModel)
-    func fetchCity(cityName: String, completion: @escaping (Bool, [ListResponse]?) -> Void) 
+    func fetchCity(cityName: String, completion: @escaping (Bool, ResponseModel?) -> Void) 
 }
 
 class CashManager: CashManagerOperation {
@@ -30,9 +30,9 @@ class CashManager: CashManagerOperation {
         UD.saveResponseToCash(response: data)
     }
 
-    func fetchCity(cityName: String, completion: @escaping (Bool, [ListResponse]?) -> Void) {
-        if let city = UD.fetchCityFromCash(cityName) {
-            completion(true, city.list)
+    func fetchCity(cityName: String, completion: @escaping (Bool, ResponseModel?) -> Void) {
+        if let model = UD.fetchCityFromCash(cityName) {
+            completion(true, model)
             return
         }
         completion(false, nil)

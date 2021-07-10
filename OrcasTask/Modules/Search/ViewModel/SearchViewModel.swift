@@ -19,7 +19,7 @@ protocol SearchViewModelOutput {
 
 class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutput {
 
-    var cities: BehaviorRelay<[CityViewModel]> = .init(value: [])
+    var cities: BehaviorRelay<[WeatherViewModel]> = .init(value: [])
     private let disposeBag = DisposeBag()
     private let searchUseCase: SearchUseCase
 
@@ -38,12 +38,15 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
         isLoading.onNext(true)
         searchUseCase.executeCitiesFetch(cityName).subscribe { [unowned self] (response) in
             self.isLoading.onNext(false)
-            self.cities.accept(response.map(CityViewModel.init))
-            if response.isEmpty {
+            if let list = response.list {
+                self.cities.accept(list.map(WeatherViewModel.init))
+            } else {
+                self.cities.accept([])
                 self.displayToastMessage.onNext("City Not found")
             }
         } onError: { (error) in
             self.isLoading.onNext(false)
+            self.cities.accept([])
             self.noInternetConnection.onNext("")
         } onCompleted: {
             self.isLoading.onNext(false)

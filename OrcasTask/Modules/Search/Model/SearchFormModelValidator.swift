@@ -15,10 +15,6 @@ protocol SearchModelValidatorProtocol {
 class SearchFormModelValidator: SearchModelValidatorProtocol {
 
     func isCityNameValid(cityName: String) -> Bool {
-//        var returnValue = true
-//        if cityName.count < 1 {
-//            returnValue = false
-//        }
         return cityName.count > 0
     }
 }

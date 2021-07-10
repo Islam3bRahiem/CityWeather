@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 protocol SearchRepository {
-    func fetchSearchData(_ cityName: String) -> Observable<[ListResponse]>
+    func fetchSearchData(_ cityName: String) -> Observable<ResponseModel>
 }
 
 class SearchRepositoryImpl: SearchRepository {
@@ -20,17 +20,17 @@ class SearchRepositoryImpl: SearchRepository {
         self.networkClient = networkClient
     }
 
-    func fetchSearchData(_ cityName: String) -> Observable<[ListResponse]> {
-        Observable<[ListResponse]>.create { [weak self] (item) -> Disposable in
+    func fetchSearchData(_ cityName: String) -> Observable<ResponseModel> {
+        Observable<ResponseModel>.create { [weak self] (item) -> Disposable in
             self?.networkClient.performRequest(ResponseModel.self, router: SearchRouter.forecast(cityName)) { (result) in
                 switch result {
                 case .success(let data):
-                    if data.cod == ResponseCode.Success.rawValue, let list = data.list {
-                        item.onNext(list)
+                    if data.cod == ResponseCode.Success.rawValue {
+                        item.onNext(data)
                         item.onCompleted()
                         self?.saveDataToDataBase(data)
                     } else {
-                        item.onNext([])
+                        item.onNext(data)
                         item.onCompleted()
                     }
                 case .failure(let error):
@@ -46,11 +46,11 @@ class SearchRepositoryImpl: SearchRepository {
     private func saveDataToDataBase(_ response: ResponseModel) {
         CashManager.shared.save(response)
     }
-    private func fetchDataFromDatabase(_ item: AnyObserver<[ListResponse]>, for cityName: String, error: Error) {
+    private func fetchDataFromDatabase(_ item: AnyObserver<ResponseModel>, for cityName: String, error: Error) {
         CashManager.shared.fetchCity(cityName: cityName) { [weak self](success, response) in
             guard self != nil else { return }
             if success {
-                item.onNext(response ?? [])
+                item.onNext(response!)
                 item.onCompleted()
             } else {
                 item.onError(error)

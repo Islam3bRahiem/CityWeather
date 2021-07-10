@@ -26,6 +26,10 @@
 		A6B4A8A02699A6F200E0C29C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */; };
 		A6B4A8AB2699AA6300E0C29C /* SearchFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */; };
 		A6B4A8BC2699AAF000E0C29C /* SearchFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */; };
+		A6B4A8D82699E10100E0C29C /* MockSearchModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8D72699E10100E0C29C /* MockSearchModelValidator.swift */; };
+		A6B4A8E02699E19800E0C29C /* MockSearchWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8DF2699E19800E0C29C /* MockSearchWebService.swift */; };
+		A6B4A8E52699E2C000E0C29C /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8E42699E2C000E0C29C /* ResponseModel.swift */; };
+		A6B4A8ED2699E50F00E0C29C /* SearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8EC2699E50F00E0C29C /* SearchError.swift */; };
 		A6D164AC2696077F00BE83AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AB2696077F00BE83AB /* AppDelegate.swift */; };
 		A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AD2696077F00BE83AB /* SceneDelegate.swift */; };
 		A6D164B32696077F00BE83AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B12696077F00BE83AB /* Main.storyboard */; };
@@ -86,6 +90,10 @@
 		A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormModelValidator.swift; sourceTree = "<group>"; };
 		A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		A6B4A8D72699E10100E0C29C /* MockSearchModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchModelValidator.swift; sourceTree = "<group>"; };
+		A6B4A8DF2699E19800E0C29C /* MockSearchWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchWebService.swift; sourceTree = "<group>"; };
+		A6B4A8E42699E2C000E0C29C /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		A6B4A8EC2699E50F00E0C29C /* SearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchError.swift; sourceTree = "<group>"; };
 		A6D164A82696077F00BE83AB /* OrcasTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrcasTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D164AB2696077F00BE83AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D164AD2696077F00BE83AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,8 +252,10 @@
 		A6B4A8812699A41C00E0C29C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6B4A8E42699E2C000E0C29C /* ResponseModel.swift */,
 				A68621C4269629D60045176C /* CityViewModel.swift */,
 				A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */,
+				A6B4A8EC2699E50F00E0C29C /* SearchError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */,
+				A6B4A8D72699E10100E0C29C /* MockSearchModelValidator.swift */,
+				A6B4A8DF2699E19800E0C29C /* MockSearchWebService.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -272,6 +284,23 @@
 				A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A6B4A8CD2699E05500E0C29C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A686212B269617820045176C /* Weather Cell */,
+				A6D165282696133300BE83AB /* SearchVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6B4A8CE2699E05D00E0C29C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A68621B3269625660045176C /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A6D1649F2696077F00BE83AB = {
@@ -374,9 +403,8 @@
 			children = (
 				A68621B8269625FE0045176C /* Domain */,
 				A6B4A8812699A41C00E0C29C /* Model */,
-				A686212B269617820045176C /* Weather Cell */,
-				A6D165282696133300BE83AB /* SearchVC.swift */,
-				A68621B3269625660045176C /* SearchViewModel.swift */,
+				A6B4A8CD2699E05500E0C29C /* View */,
+				A6B4A8CE2699E05D00E0C29C /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -671,11 +699,13 @@
 				A68621952696233A0045176C /* BaseViewModel.swift in Sources */,
 				A6D164AC2696077F00BE83AB /* AppDelegate.swift in Sources */,
 				A686213126961B080045176C /* BaseController.swift in Sources */,
+				A6B4A8E52699E2C000E0C29C /* ResponseModel.swift in Sources */,
 				A6862176269620F80045176C /* ResponseObject.swift in Sources */,
 				A6DD878126987C6B00C8CD43 /* StoredProperty.swift in Sources */,
 				A6B4A8AB2699AA6300E0C29C /* SearchFormModelValidator.swift in Sources */,
 				A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */,
 				A6DD878C26987D1300C8CD43 /* UserDefault.swift in Sources */,
+				A6B4A8ED2699E50F00E0C29C /* SearchError.swift in Sources */,
 				A68621BA269626090045176C /* SearchRepository.swift in Sources */,
 				A686216C269620C20045176C /* NetworkClient.swift in Sources */,
 				A686216D269620C20045176C /* SearchRouter.swift in Sources */,
@@ -687,6 +717,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B4A8A02699A6F200E0C29C /* MockURLProtocol.swift in Sources */,
+				A6B4A8D82699E10100E0C29C /* MockSearchModelValidator.swift in Sources */,
+				A6B4A8E02699E19800E0C29C /* MockSearchWebService.swift in Sources */,
 				A6B4A8972699A60E00E0C29C /* SearchWebServiceTests.swift in Sources */,
 				A6B4A8BC2699AAF000E0C29C /* SearchFormModelValidatorTests.swift in Sources */,
 				A6B4A8602699A07E00E0C29C /* SearchViewControllerTests.swift in Sources */,
@@ -865,7 +897,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rowaad.OrcasTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.OrcasTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -885,7 +917,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rowaad.OrcasTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.OrcasTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -26,4 +26,3 @@ enum ResponseError: Error {
     case DecoderError
 
 }
-

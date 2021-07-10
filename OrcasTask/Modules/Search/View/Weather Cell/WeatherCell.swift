@@ -19,7 +19,7 @@ class WeatherCell: UITableViewCell {
         selectionStyle = .none
     }
 
-    func cellBind(_ model: CityViewModel) {
+    func cellBind(_ model: WeatherViewModel) {
         idLbl.text = model.id
         descriptionLbl.text = model.description
         dateLbl.text = model.date

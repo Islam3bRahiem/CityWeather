@@ -18,7 +18,7 @@ class SearchUseCase {
         self.searchRepository = searchRepository
     }
 
-    func executeCitiesFetch(_ cityName: String) -> Observable<[ListResponse]>{
+    func executeCitiesFetch(_ cityName: String) -> Observable<ResponseModel>{
         let observable = searchRepository.fetchSearchData(cityName)
         observable.subscribe { (item) in
             // TODO :- nothing
