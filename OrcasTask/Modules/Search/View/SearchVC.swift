@@ -30,8 +30,8 @@ class SearchVC: BaseController {
     // MARK: - ...  override
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupResultTableView()
-        bind()
+//        setupResultTableView()
+//        bind()
     }
 }
 

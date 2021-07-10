@@ -28,7 +28,6 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
         self.searchUseCase = searchUseCase
     }
 
-
     // Inputs
     func searchForCity(with cityName: String?) {
         guard let cityName = cityName, !cityName.isEmpty else {
