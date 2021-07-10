@@ -15,6 +15,7 @@ class SearchVC: BaseController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var resultTableView: UITableView!
     @IBOutlet weak var searchTxf: UITextField!
+    @IBOutlet weak var searchBtn: UIButton!
 
 
     // MARK: - ...  Variables

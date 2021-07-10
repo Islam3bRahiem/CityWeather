@@ -70,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="resultTableView" destination="CxE-1O-EQQ" id="FMV-7G-XlQ"/>
+                        <outlet property="searchBtn" destination="UUg-Z0-ofe" id="0Ja-v4-idQ"/>
                         <outlet property="searchTxf" destination="odc-vn-TNj" id="WLi-8f-PcW"/>
                         <outlet property="titleLbl" destination="3xZ-Oo-cp4" id="1XL-iY-F8Q"/>
                     </connections>

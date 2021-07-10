@@ -21,12 +21,16 @@
 		A68621BA269626090045176C /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621B9269626090045176C /* SearchRepository.swift */; };
 		A68621BF269627D00045176C /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621BE269627D00045176C /* SearchUseCase.swift */; };
 		A68621C5269629D60045176C /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68621C4269629D60045176C /* CityViewModel.swift */; };
+		A6B4A8602699A07E00E0C29C /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A85F2699A07E00E0C29C /* SearchViewControllerTests.swift */; };
+		A6B4A8972699A60E00E0C29C /* SearchWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8962699A60E00E0C29C /* SearchWebServiceTests.swift */; };
+		A6B4A8A02699A6F200E0C29C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */; };
+		A6B4A8AB2699AA6300E0C29C /* SearchFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */; };
+		A6B4A8BC2699AAF000E0C29C /* SearchFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */; };
 		A6D164AC2696077F00BE83AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AB2696077F00BE83AB /* AppDelegate.swift */; };
 		A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164AD2696077F00BE83AB /* SceneDelegate.swift */; };
 		A6D164B32696077F00BE83AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B12696077F00BE83AB /* Main.storyboard */; };
 		A6D164B52696078200BE83AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B42696078200BE83AB /* Assets.xcassets */; };
 		A6D164B82696078200BE83AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D164B62696078200BE83AB /* LaunchScreen.storyboard */; };
-		A6D164C32696078200BE83AB /* OrcasTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164C22696078200BE83AB /* OrcasTaskTests.swift */; };
 		A6D164CE2696078200BE83AB /* OrcasTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D164CD2696078200BE83AB /* OrcasTaskUITests.swift */; };
 		A6D1652A2696133300BE83AB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D165282696133300BE83AB /* SearchVC.swift */; };
 		A6D4392326988CE200C9322F /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D4392226988CE200C9322F /* ResponseCode.swift */; };
@@ -77,6 +81,11 @@
 		A68621B9269626090045176C /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		A68621BE269627D00045176C /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
 		A68621C4269629D60045176C /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		A6B4A85F2699A07E00E0C29C /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		A6B4A8962699A60E00E0C29C /* SearchWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWebServiceTests.swift; sourceTree = "<group>"; };
+		A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormModelValidator.swift; sourceTree = "<group>"; };
+		A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		A6D164A82696077F00BE83AB /* OrcasTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrcasTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D164AB2696077F00BE83AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D164AD2696077F00BE83AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +94,6 @@
 		A6D164B72696078200BE83AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D164B92696078200BE83AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D164BE2696078200BE83AB /* OrcasTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrcasTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6D164C22696078200BE83AB /* OrcasTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrcasTaskTests.swift; sourceTree = "<group>"; };
 		A6D164C42696078200BE83AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D164C92696078200BE83AB /* OrcasTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrcasTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D164CD2696078200BE83AB /* OrcasTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrcasTaskUITests.swift; sourceTree = "<group>"; };
@@ -214,6 +222,58 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		A69869E22699A01C00AF812F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4A85B2699A05400E0C29C /* Controllers */,
+				A6B4A89E2699A6E600E0C29C /* Mocks */,
+				A6B4A8952699A5F700E0C29C /* Network */,
+				A6B4A8AF2699AAC500E0C29C /* Model */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		A6B4A85B2699A05400E0C29C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4A85F2699A07E00E0C29C /* SearchViewControllerTests.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A6B4A8812699A41C00E0C29C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A68621C4269629D60045176C /* CityViewModel.swift */,
+				A6B4A8AA2699AA6300E0C29C /* SearchFormModelValidator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6B4A8952699A5F700E0C29C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4A8962699A60E00E0C29C /* SearchWebServiceTests.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A6B4A89E2699A6E600E0C29C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4A89F2699A6F200E0C29C /* MockURLProtocol.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		A6B4A8AF2699AAC500E0C29C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4A8BB2699AAF000E0C29C /* SearchFormModelValidatorTests.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A6D1649F2696077F00BE83AB = {
 			isa = PBXGroup;
 			children = (
@@ -253,7 +313,7 @@
 		A6D164C12696078200BE83AB /* OrcasTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6D164C22696078200BE83AB /* OrcasTaskTests.swift */,
+				A69869E22699A01C00AF812F /* Search */,
 				A6D164C42696078200BE83AB /* Info.plist */,
 			);
 			path = OrcasTaskTests;
@@ -313,10 +373,10 @@
 			isa = PBXGroup;
 			children = (
 				A68621B8269625FE0045176C /* Domain */,
+				A6B4A8812699A41C00E0C29C /* Model */,
 				A686212B269617820045176C /* Weather Cell */,
 				A6D165282696133300BE83AB /* SearchVC.swift */,
 				A68621B3269625660045176C /* SearchViewModel.swift */,
-				A68621C4269629D60045176C /* CityViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -431,6 +491,7 @@
 					};
 					A6D164BD2696078200BE83AB = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 						TestTargetID = A6D164A72696077F00BE83AB;
 					};
 					A6D164C82696078200BE83AB = {
@@ -612,6 +673,7 @@
 				A686213126961B080045176C /* BaseController.swift in Sources */,
 				A6862176269620F80045176C /* ResponseObject.swift in Sources */,
 				A6DD878126987C6B00C8CD43 /* StoredProperty.swift in Sources */,
+				A6B4A8AB2699AA6300E0C29C /* SearchFormModelValidator.swift in Sources */,
 				A6D164AE2696077F00BE83AB /* SceneDelegate.swift in Sources */,
 				A6DD878C26987D1300C8CD43 /* UserDefault.swift in Sources */,
 				A68621BA269626090045176C /* SearchRepository.swift in Sources */,
@@ -624,7 +686,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D164C32696078200BE83AB /* OrcasTaskTests.swift in Sources */,
+				A6B4A8A02699A6F200E0C29C /* MockURLProtocol.swift in Sources */,
+				A6B4A8972699A60E00E0C29C /* SearchWebServiceTests.swift in Sources */,
+				A6B4A8BC2699AAF000E0C29C /* SearchFormModelValidatorTests.swift in Sources */,
+				A6B4A8602699A07E00E0C29C /* SearchViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,6 +898,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4A23ZSF86;
 				INFOPLIST_FILE = OrcasTaskTests/Info.plist;
@@ -844,6 +910,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rowaad.OrcasTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrcasTask.app/OrcasTask";
@@ -856,6 +923,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4A23ZSF86;
 				INFOPLIST_FILE = OrcasTaskTests/Info.plist;

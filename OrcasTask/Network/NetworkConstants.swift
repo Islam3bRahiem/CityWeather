@@ -20,7 +20,7 @@ class NetworkConstants {
     static let appid = "5e4621edb49aac20f060e7c6fa7cf6d1"
 }
 
-enum SearchError: Error {
+enum ResponseError: Error {
     case URLNotValid
     case CityNotFound
     case DecoderError

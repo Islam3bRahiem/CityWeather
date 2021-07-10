@@ -19,7 +19,7 @@ protocol APIRouter: URLRequestConvertible {
 extension APIRouter {
     func asURLRequest() throws -> URLRequest {
         guard var url: URL = URL(string: NetworkConstants.baseUrl) else {
-            throw SearchError.URLNotValid
+            throw ResponseError.URLNotValid
         }
         url.appendPathComponent(path)
         let request = try URLRequest(url: url, method: method, headers: nil)
